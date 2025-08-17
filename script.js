@@ -13,5 +13,12 @@ function filterBooks(){
   const searchTerm = searchInput.value.trim().toLowerCase();
   const bookItems = documents.querySelectorAll('.book-item');
   bookItems.forEach(bookItem =>{
-    const bookTitle = bookItem.query selector('h3').textContent.toLowerCase();
-    const bookAuthor = bookItem
+    const bookTitle = bookItem.queryselector('h3').textContent.toLowerCase();
+    const bookAuthor = bookItem.queryselector('p').textContent.toLowerCase().replace('by ','')
+    if(bookTitle.includes(searchTerm)||bookAuthor.includes(searchTerm)){
+      bookItem.style.display = 'block';
+    }else{
+      bookItem.style.display='none';
+    });
+}
+      
