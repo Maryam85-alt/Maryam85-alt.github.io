@@ -1,7 +1,8 @@
 [
-  {
-    "python crash course edition 1":"Book 1",
-    "Eric Matthes":"Author 1",
-    "cover":"book1.jpg"
-  },
+    {
+        "title": "Python Crash Course Edition 1",
+        "author": "Eric Matthes",
+        "cover": "book1.jpg"
+    }
+]
   
