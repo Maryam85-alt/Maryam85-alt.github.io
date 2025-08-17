@@ -31,3 +31,10 @@ main{
 #book-list li{
   margin-bottom: 1em;
 }
+body{
+  font-family: Arial, sans-serif;
+}
+.book-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap;
