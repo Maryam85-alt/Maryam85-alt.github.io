@@ -4,6 +4,11 @@ body {
   padding: 0;
   background-color: #f0f0f0;
 }
-header{
-  background-color: #333;
+
+header {
+  background-color: #032B44;
   color: #fff;
+  /* You might want to add some padding here to give the header some height */
+  padding: 1em;
+  text-align: center;
+}
