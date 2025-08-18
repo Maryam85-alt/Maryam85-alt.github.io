@@ -46,3 +46,19 @@ main {
     width: 50%;
     margin-bottom: 20px;
 }
+.categories{
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+.category-btn{
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.category-btn:hover{
+    background-color: #23527c;
+}
