@@ -1,13 +1,15 @@
 header {
-  text-align: center;
-  padding: 1em;
   background-color: #032B44; /* Navy blue color */
-  color: #fff; /* White text color */
+  padding: 20px;
+  text-align: center;
 }
 
 h1 {
+  color: #fff; /* White text color */
   font-size: 36px;
   margin: 0;
 }
+
+
 
 
