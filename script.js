@@ -29,4 +29,30 @@ fetch('books.json')
         }
     })
     .catch(error => console.error('Error:', error));
+function showBooks(category) {
+  const bookList = document.getElementById('book-list');
+  bookList.innerHTML = '';
 
+  // Sample book data
+  const books = {
+    fiction: [
+      { Pride and Prejudice : 'Book 1',Jane Austen: 'Author 1' },
+      { The Adventures of Tom Sawyer : 'Book 2', Mark Twain: 'Author 2' },
+    ],
+    'non-fiction': [
+      { Sapiens: 'Book 3', Yuval Noah Harari : 'Author 3' },
+      { The Diary of a Young Girl : 'Book 4', Anne Frank: 'Author 4' },
+    ],
+    biographies: [
+      { The Autobiography of Malcolm X: 'Book 5', Malcolm X: 'Author 5' },
+    ],
+  };
+
+  const selectedBooks = books[category];
+
+  selectedBooks.forEach((book) => {
+    const bookElement = document.createElement('div');
+    bookElement.innerHTML = <h3>${book.title}</h3><p>Author: ${book.author}</p>;
+    bookList.appendChild(bookElement);
+  });
+}
